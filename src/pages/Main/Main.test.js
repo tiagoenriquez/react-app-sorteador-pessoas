@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Main from './index';
+import { ThemeProvider } from 'styled-components';
+import theme from '../../theme';
 
 test('renders the page', () => {
-  render(<App />);
+  render(
+    <ThemeProvider theme={theme}>
+      <Main />
+    </ThemeProvider>
+  );
   expect(screen.getByRole("heading")).toBeInTheDocument();
   expect(screen.getByRole("spinbutton")).toBeInTheDocument();
   expect(screen.getByRole("button")).toBeInTheDocument();
