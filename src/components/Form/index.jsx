@@ -1,5 +1,6 @@
 import Spinbutton from '../Spinbutton';
 import Button from '../Button';
+import { getPessoas } from '../../providers/PessoasProvider';
 
 export default function Form() {
 
