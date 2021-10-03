@@ -5,9 +5,17 @@ import theme from "../../theme";
 
 test('renders a spinbutton', () => {
 
+  function ola() {
+    console.log(Ola);
+  }
+
   render(
     <ThemeProvider theme={theme}>
-      <Spinbutton placeholder="Digite a quantidade de pessoas" />
+      <Spinbutton
+        onKeyPress={ola}
+        onChange={ola}
+        placeholder="Digite a quantidade de pessoas"
+      />
     </ThemeProvider>);
 
   expect(screen.getByRole("spinbutton")).toBeInTheDocument();

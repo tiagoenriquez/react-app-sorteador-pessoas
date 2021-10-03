@@ -5,7 +5,7 @@ import { getPessoas } from './index';
 const response = { teste: "teste" };
 const numero = 2;
 const server = setupServer(
-  rest.get(`process.env.API_URL/${numero}`, (_req, res, ctx) => {
+  rest.get(`https://safe-headland-22590.herokuapp.com/lista/${numero}`, (_req, res, ctx) => {
     return res(ctx.json(response));
   })
 );

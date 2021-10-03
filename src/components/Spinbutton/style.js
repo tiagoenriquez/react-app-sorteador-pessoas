@@ -7,6 +7,7 @@ export const SpinbuttonStyled = styled.input`
   font-size: 15px;
   placeholder-color: ${(props) => props.theme.colors.secondary};
   font-family: ${(props) => props.theme.fontFamilies.primary};
+  color: ${(props) => props.theme.colors.primary};
   : hover {
     background-color: ${(props) => props.theme.colors.soft};
   }
