@@ -1,3 +1,9 @@
+# Sorteador de Pessoas
+
+Uma aplicação React que permite ao usuário inserir um número e retorna dados sorteados de pessoas fictícias.
+O número de pessoas é o número submetido pelo usuário.
+Os dados sorteados são: nome, CPF, RG, telefone, usuário, e-mail e senha.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

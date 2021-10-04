@@ -2,13 +2,15 @@ import { useState, useEffect } from 'react';
 import Spinbutton from '../Spinbutton';
 import Button from '../Button';
 import Table from '../Table';
+import image from '../../assets/carnaval.jpeg';
 import { getPessoas } from '../../providers/PessoasProvider';
 import { FormStyled } from './style';
+import { ImageStyled } from './style';
 
 export default function Form() {
 
   const [numero, setNumero] = useState(0);
-  const [pessoas, setPessoas] = useState(null);
+  const [pessoas, setPessoas] = useState([]);
   const titulos = [{
     nome: "Nome"
   }, {
@@ -63,10 +65,15 @@ export default function Form() {
         </Button>
       </FormStyled>
       {
-        pessoas &&
+        pessoas.length > 0 ?
           <Table
             titulos={titulos}
             pessoas={pessoas}
+          />
+        :
+          <ImageStyled
+            src={image}
+            alt="Erro ao carregar imagem"
           />
       }
     </div>

@@ -9,7 +9,7 @@ export default function THead({ titulos }) {
         {
           titulos.map((titulo) =>
             <RowStyled key={titulo.nome}>
-              {titulo.nome}
+              <b>{titulo.nome}</b>
             </RowStyled>
           )
         }

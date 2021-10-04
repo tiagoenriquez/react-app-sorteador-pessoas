@@ -5,7 +5,7 @@ export const TableStyled = styled.table`
   color: ${(props) => props.theme.colors.dark};
   border: 1px solid ${(props) => props.theme.colors.primary};
   font-family: ${(props) => props.theme.fontFamilies.primary};
-  margin: 10px 10px 10px 10px;
+  margin: 40px 10px 10px 10px;
 `;
 
 export const RowStyled = styled.td`
